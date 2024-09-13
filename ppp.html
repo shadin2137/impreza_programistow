@@ -5,10 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        button {}
+    </style>
 </head>
 
 <body>
-    gites23
+    <div id="clickdiv">hello</div>
+    <button onclick="countTracker()"><img src="glovo.jpg"></button>
+    <script type="text/javascript">
+
+        var clickCount = 0;
+        function countTracker() {
+            clickCount += 1;
+            document.getElementById("clickdiv").innerHTML = "Clicks:" + clickCount;
+            localStorage.setItem("count", clickCount);
+
+        }
+        str_count = localStorage.getItem("count");
+        console.log(str_count);
+    </script>
+
 </body>
 
 </html>
