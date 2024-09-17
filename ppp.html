@@ -14,7 +14,7 @@
             height: 100vh;
             overflow: hidden;
             background: rgb(182, 82, 126);
-            background: radial-gradient(circle, rgba(182, 82, 126, 1) 0%, rgba(182, 82, 173, 1) 4%, rgba(182, 82, 82, 1) 100%, rgba(252, 70, 70, 1) 100%);
+            background: radial-gradient(circle, rgba(182, 82, 126, 1) 0%, rgba(182, 82, 173, 1) 4%, rgba(255, 192, 0, 1) 48%, rgba(182, 82, 82, 1) 100%);
         }
 
         img {
@@ -59,7 +59,7 @@
         var clickCount = 0;
         function countTracker() {
             clickCount += 1;
-            document.getElementById("clickdiv").innerHTML = "<h3>Clicks:<h3>" + clickCount;
+            document.getElementById("clickdiv").innerHTML = "<h3>Clicks:" + clickCount + "<h3>";
             localStorage.setItem("count", clickCount);
 
         }
