@@ -13,11 +13,13 @@
             flex-direction: column;
             height: 100vh;
             overflow: hidden;
+            background: rgb(63, 94, 251);
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(166, 141, 82, 1) 57%, rgba(93, 163, 82, 1) 73%, rgba(155, 180, 82, 1) 80%, rgba(182, 82, 82, 1) 100%, rgba(252, 70, 107, 1) 100%);
         }
 
         img {
-            width: 40px;
-            height: 40px;
+            width: 110px;
+            height: 110px;
         }
 
         button {}
@@ -32,7 +34,7 @@
         var clickCount = 0;
         function countTracker() {
             clickCount += 1;
-            document.getElementById("clickdiv").innerHTML = "Clicks:" + clickCount;
+            document.getElementById("clickdiv").innerHTML = "<h3>Clicks:<h3>" + clickCount;
             localStorage.setItem("count", clickCount);
 
         }
