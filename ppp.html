@@ -13,27 +13,27 @@
             flex-direction: column;
             height: 100vh;
             overflow: hidden;
-            background: rgb(63, 94, 251);
-            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(166, 141, 82, 1) 57%, rgba(93, 163, 82, 1) 73%, rgba(155, 180, 82, 1) 80%, rgba(182, 82, 82, 1) 100%, rgba(252, 70, 107, 1) 100%);
+            background: rgb(182, 82, 126);
+            background: radial-gradient(circle, rgba(182, 82, 126, 1) 0%, rgba(182, 82, 173, 1) 4%, rgba(182, 82, 82, 1) 100%, rgba(252, 70, 70, 1) 100%);
         }
 
         img {
             width: 110px;
             height: 110px;
-            animation: buty 1s infinite linear;
+            animation: buty 2s infinite ease-in;
         }
 
         @keyframes buty {
             0% {
-                transform: scale(1.5);
+                transform: scale(1.4);
             }
 
             50% {
-                transform: scale(1);
+                transform: scale(0.9);
             }
 
             100% {
-                transform: scale(1.5);
+                transform: scale(1.4);
             }
         }
 
@@ -43,13 +43,16 @@
         button {
             height: 160px;
             width: 160px;
-            
+            border-radius: 40px;
+            background-color: brown;
+            border-color: blueviolet;
+
         }
     </style>
 </head>
 
 <body>
-    <div id="clickdiv">hello</div>
+    <div id="clickdiv"></div>
     <button onclick="countTracker()"><img src="glovo.jpg"></button>
     <script type="text/javascript">
 
