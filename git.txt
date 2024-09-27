@@ -1,0 +1,21 @@
+
+- `git init`
+- `git clone`
+b) Checking Status:
+- `git status`
+- `git log`
+c) Staging and Committing:
+- `git add`
+- `git commit`
+- `git stash`
+d) Branching and Merging: 
+- `git branch`
+- `git checkout`
+- `git merge`
+e) Remote Operations: 
+- `git push` 
+- `git pull`
+- `git remote`
+f) Changes and Differences: 
+- `git diff` 
+- `git reset`
