@@ -1,1 +1,4 @@
 /config/config.json
+/cache/*
+.neatbeans.xml
+.netbeans.xml
